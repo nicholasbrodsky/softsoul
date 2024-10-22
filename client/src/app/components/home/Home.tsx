@@ -42,11 +42,11 @@ export default function Home() {
                 <Grid2 size={6}>
                     <img src="images/wellness_wheel.jpeg" style={{ margin: 'auto', border: '0 solid black', display: 'block', height: '100%' }} />
                 </Grid2>
-                <Grid2 size={5} sx={{ border: '1px solid black', display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly'}}>
+                <Grid2 size={5} sx={{ border: '0px solid black', display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', height: '85%'}}>
                     <Typography variant="h3">Our Focus</Typography>
                     <Typography variant="h5">Holistic Health &amp; Wellness Transformation</Typography>
                     <Typography variant="h6">Soft Soul Collective believes that true wellness goes beyond just physical health; it’s about nurturing the mind, body, and spirit. My approach to health and wellness coaching is holistic, meaning I help my clients create sustainable habits in all areas of their lives—whether that’s nutrition, movement, mental well-being, or emotional balance. Together, we’ll work to build a personalized plan that supports your overall wellness, helping you feel energized, balanced, and empowered to live your best life.</Typography>
-                    <Button variant="contained" sx={{ backgroundColor: '#1f472d', borderRadius: '50px' }}>Find Out More!</Button>
+                    <Button variant="contained" sx={{ backgroundColor: '#1f472d', borderRadius: '50px', fontSize: '18px', maxWidth: '25%' }}>Find Out More!</Button>
                 </Grid2>
             </Grid2>
         </>
