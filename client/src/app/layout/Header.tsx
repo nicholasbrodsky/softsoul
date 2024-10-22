@@ -35,7 +35,7 @@ export default function Header() {
     
     return (
         <ElevationScroll>
-            <AppBar position="sticky" sx={{ backgroundColor: "#4b6357", height: '5vh' }}>
+            <AppBar position="sticky" sx={{ backgroundColor: "#8A9A5B", minHeight: '5vh' }}>
                 <Toolbar sx={{ justifyContent: "space-between" }}>
                     <Box>
                         <List sx={{ display: "flex" }}>
