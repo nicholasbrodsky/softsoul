@@ -3,6 +3,7 @@ import App from "../app/layout/App";
 import Home from "../app/components/home/Home";
 import Services from "../app/components/services/Services";
 import About from "../app/components/about/About";
+import BookAppointment from "../app/components/bookings/BookAppointment";
 
 export const router = createBrowserRouter([
     {
@@ -11,7 +12,8 @@ export const router = createBrowserRouter([
         children: [
             { path: '', element: <Home /> },
             { path: 'about', element: <About /> },
-            { path: 'services', element: <Services /> }
+            { path: 'services', element: <Services /> },
+            { path: 'book-appointment', element: <BookAppointment /> },
         ]
     }
 ])

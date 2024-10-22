@@ -4,9 +4,9 @@ export default function Home() {
     
     return (
         <>
-            <Box sx={{ height: '95vh', bgcolor: '#8A9A5B', }}>
-                <Grid2 container sx={{ height: '100%', color: 'white' }}>
-                    <Grid2 size={6} sx={{ pt: '10vh', position: 'relative', textAlign: 'center', display: 'flex', flexDirection: 'column' }}>
+            <Box sx={{ height: '95vh', bgcolor: '#dde4b8', }}>
+                <Grid2 container sx={{ height: '100%' }}>
+                    <Grid2 size={6} sx={{ pt: '10vh', color: '#1f472d', position: 'relative', textAlign: 'center', display: 'flex', flexDirection: 'column' }}>
 
                         <span style={{ fontSize: '5vw', fontFamily: 'Courgette' }}>Welcome to</span>
                         <span style={{ fontSize: '9vw', fontFamily: 'Courgette', marginBottom: -56 }}>SoftSoul</span>
@@ -46,7 +46,7 @@ export default function Home() {
                     <Typography variant="h3">Our Focus</Typography>
                     <Typography variant="h5">Holistic Health &amp; Wellness Transformation</Typography>
                     <Typography variant="h6">Soft Soul Collective believes that true wellness goes beyond just physical health; it’s about nurturing the mind, body, and spirit. My approach to health and wellness coaching is holistic, meaning I help my clients create sustainable habits in all areas of their lives—whether that’s nutrition, movement, mental well-being, or emotional balance. Together, we’ll work to build a personalized plan that supports your overall wellness, helping you feel energized, balanced, and empowered to live your best life.</Typography>
-                    <Button variant="contained" sx={{ backgroundColor: 'red', borderRadius: '50px' }}>Find Out More!</Button>
+                    <Button variant="contained" sx={{ backgroundColor: '#1f472d', borderRadius: '50px' }}>Find Out More!</Button>
                 </Grid2>
             </Grid2>
         </>
