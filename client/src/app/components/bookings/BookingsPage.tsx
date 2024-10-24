@@ -11,10 +11,12 @@ export default function BookingsPage() {
             <div className="row">
                 <span style={{
                     display: 'block',
-                    fontSize: '56px',
+                    fontSize: '4.5rem',
                     color: '#1f472d',
                     textAlign: 'center',
                     padding: '48px',
+                    fontStyle: 'italic',
+                    fontWeight: 'bold'
                 }}>Our Services</span>
             </div>
 
