@@ -4,9 +4,10 @@ interface IProps {
     title: string,
     time: string,
     pictureUrl: string,
+    background: string,
 }
 
-export default function BookingCard({title, time, pictureUrl}: IProps) {
+export default function BookingCard({title, time, pictureUrl, background}: IProps) {
 
     return (
         <div className="row" style={{
@@ -15,7 +16,7 @@ export default function BookingCard({title, time, pictureUrl}: IProps) {
             <div className="col-md-3"></div>
 
             <div className="col-md-6" style={{
-                background: '#61916b',
+                background: `${background}`,
                 padding: '3em',
             }}>
                 <div className="row">

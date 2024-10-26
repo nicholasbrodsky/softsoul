@@ -1,4 +1,5 @@
 import { Box, Button, Grid2, Typography } from "@mui/material";
+import { Assignment, CalendarMonth, Call, Favorite, QuestionAnswer } from '@mui/icons-material';
 
 export default function Home() {
 
@@ -9,7 +10,7 @@ export default function Home() {
                     <Grid2 size={6} sx={{ pt: '10vh', color: '#1f472d', position: 'relative', textAlign: 'center', display: 'flex', flexDirection: 'column' }}>
 
                         <span style={{ fontSize: '5vw', fontFamily: 'Courgette' }}>Welcome to</span>
-                        <span style={{ fontSize: '9vw', fontFamily: 'Courgette', marginBottom: -56 }}>SoftSoul</span>
+                        <span style={{ fontSize: '9vw', fontFamily: 'Courgette' }}>SoftSoul</span>
                         <span style={{ fontSize: '7vw', fontFamily: 'Courgette' }}>Collective</span>
 
                         <Box sx={{ width: '100%', position: 'absolute', bottom: 0 }}>
@@ -38,12 +39,167 @@ export default function Home() {
                 <span style={{ fontStyle: 'italic', fontSize: '1.5vw', color: 'white', marginTop: 8 }}>Heal with compasionate support</span>
             </div>
 
-            <div className="container-fluid" style={{ padding: '120px', backgroundColor: '#f3f3f3', height: '50vh' }}>
-                <div className="row">
-                    <div className="col-md-6">
-                        <img src="images/wellness_wheel.jpeg" style={{ margin: 'auto', border: '0 solid black', display: 'block', height: '100%' }} />
+            <div className="container-fluid">
+                <div className="row" style={{
+                    padding: 48,
+                }}>
+                    <div className="col-md-2"></div>
+                    <div className="col-md-4" style={{
+                        
+                    }}>
+                        <span style={{
+                            position: 'sticky',
+                            fontSize: '4rem',
+                            fontStyle: 'italic',
+                            top: 170
+                        }}>
+                            Your Wellness Path...
+                        </span>
                     </div>
-                    <div className="col-md-6" style={{ border: '1px solid black', display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', height: '85%' }}>
+                    <div className="col-md-3">
+                        <div className="row">
+                            <div style={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                marginBottom: '2rem'
+                            }}>
+                                <Call
+                                    color="primary"
+                                    sx={{
+                                        fontSize: 60,
+                                        marginBottom: '1rem'
+                                    }}
+                                />
+                                <span style={{
+                                    textDecoration: 'toUpperCase',
+                                    fontSize: '2rem',
+                                    marginBottom: '1rem'
+                                }}>Step 1: Give Us A Call</span>
+                                <span style={{
+                                    fontSize: '1.2rem',
+                                    marginBottom: '2rem'
+                                }}>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </span>
+                                <hr style={{}} />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div style={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                marginBottom: '2rem'
+                            }}>
+                                <Assignment
+                                    color="primary"
+                                    sx={{
+                                        fontSize: 60,
+                                        marginBottom: '1rem'
+                                    }}
+                                />
+                                <span style={{
+                                    textDecoration: 'toUpperCase',
+                                    fontSize: '2rem',
+                                    marginBottom: '1rem'
+                                }}>Step 2: Initial Assessment</span>
+                                <span style={{
+                                    fontSize: '1.2rem',
+                                    marginBottom: '2rem'
+                                }}>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </span>
+                                <hr style={{}} />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div style={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                marginBottom: '2rem'
+                            }}>
+                                <CalendarMonth
+                                    color="primary"
+                                    sx={{
+                                        fontSize: 60,
+                                        marginBottom: '1rem'
+                                    }}
+                                />
+                                <span style={{
+                                    textDecoration: 'toUpperCase',
+                                    fontSize: '2rem',
+                                    marginBottom: '1rem'
+                                }}>Step 3: Create Customized Program</span>
+                                <span style={{
+                                    fontSize: '1.2rem',
+                                    marginBottom: '2rem'
+                                }}>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </span>
+                                <hr style={{}} />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div style={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                marginBottom: '2rem'
+                            }}>
+                                <QuestionAnswer
+                                    color="primary"
+                                    sx={{
+                                        fontSize: 60,
+                                        marginBottom: '1rem'
+                                    }}
+                                />
+                                <span style={{
+                                    textDecoration: 'toUpperCase',
+                                    fontSize: '2rem',
+                                    marginBottom: '1rem'
+                                }}>Step 4: Coaching Sessions</span>
+                                <span style={{
+                                    fontSize: '1.2rem',
+                                    marginBottom: '2rem'
+                                }}>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </span>
+                                <hr style={{}} />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div style={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                marginBottom: '2rem'
+                            }}>
+                                <Favorite
+                                    color="primary"
+                                    sx={{
+                                        fontSize: 60,
+                                        marginBottom: '1rem'
+                                    }}
+                                />
+                                <span style={{
+                                    textDecoration: 'toUpperCase',
+                                    fontSize: '2rem',
+                                    marginBottom: '1rem'
+                                }}>Step 5: Maintain Change</span>
+                                <span style={{
+                                    fontSize: '1.2rem',
+                                    marginBottom: '2rem'
+                                }}>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-3"></div>
+                </div>
+
+                <div className="row" style={{ padding: '120px', backgroundColor: '#f3f3f3', height: '50vh' }}>
+                    <div className="col-md-6">
+                        <img src="images/wellness-wheel.png" style={{ margin: 'auto', border: '0 solid black', display: 'block', height: '100%' }} />
+                    </div>
+                    <div className="col-md-6" style={{ border: '0px solid black', display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly' }}>
                         <Typography variant="h3">Our Focus</Typography>
                         <Typography variant="h5">Holistic Health &amp; Wellness Transformation</Typography>
                         <Typography variant="h6">Soft Soul Collective believes that true wellness goes beyond just physical health; it’s about nurturing the mind, body, and spirit. My approach to health and wellness coaching is holistic, meaning I help my clients create sustainable habits in all areas of their lives—whether that’s nutrition, movement, mental well-being, or emotional balance. Together, we’ll work to build a personalized plan that supports your overall wellness, helping you feel energized, balanced, and empowered to live your best life.</Typography>

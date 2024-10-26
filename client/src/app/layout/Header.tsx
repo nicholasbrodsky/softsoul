@@ -12,6 +12,7 @@ const navLinks = [
     {title: "home", path: ''},
     {title: "About", path: 'about'},
     {title: "Services", path: 'services'},
+    {title: "Contact Us", path: ''},
 ]
 
 interface IProps {
