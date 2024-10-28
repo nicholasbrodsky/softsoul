@@ -5,6 +5,7 @@ export default function Home() {
 
     return (
         <>
+            {/* Initial home page banner */}
             <Box sx={{ height: '95vh', bgcolor: '#dde4b8', }}>
                 <Grid2 container sx={{ height: '100%' }}>
                     <Grid2 size={6} sx={{ pt: '10vh', color: '#1f472d', position: 'relative', textAlign: 'center', display: 'flex', flexDirection: 'column' }}>
@@ -32,14 +33,19 @@ export default function Home() {
                 </Grid2>
             </Box>
 
-            <div style={{ padding: 36, minHeight: '40vh', backgroundImage: 'linear-gradient(to right, #fae6f4, #e6b3d7, #ffd4f2, #e6b3d7, #fae6f4)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                <span style={{ fontSize: '5vw', lineHeight: '1.1', fontWeight: '500' }}>Foster self-love</span>
-                <span style={{ fontSize: '5vw', lineHeight: '1.1', fontWeight: '500' }}>to flourish in</span>
-                <span style={{ fontSize: '5vw', lineHeight: '1.1', fontWeight: '500' }}>healing</span>
-                <span style={{ fontStyle: 'italic', fontSize: '1.5vw', color: 'white', marginTop: 8 }}>Heal with compasionate support</span>
-            </div>
-
             <div className="container-fluid">
+
+                {/* Section for hook message display */}
+                <div className="row" style={{
+                    padding: 36, minHeight: '40vh', backgroundImage: 'linear-gradient(to right, #fae6f4, #e6b3d7, #ffd4f2, #e6b3d7, #fae6f4)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
+                }}>
+                    <span style={{ fontSize: '5vw', lineHeight: '1.1', fontWeight: '500' }}>Foster self-love</span>
+                    <span style={{ fontSize: '5vw', lineHeight: '1.1', fontWeight: '500' }}>to flourish in</span>
+                    <span style={{ fontSize: '5vw', lineHeight: '1.1', fontWeight: '500' }}>healing</span>
+                    <span style={{ fontStyle: 'italic', fontSize: '1.5vw', color: 'white', marginTop: 8 }}>Heal with compasionate support</span>
+                </div>
+
+                {/* Wellness steps section */}
                 <div className="row" style={{
                     padding: 48,
                 }}>
@@ -195,6 +201,7 @@ export default function Home() {
                     <div className="col-md-3"></div>
                 </div>
 
+                {/* Our Focus description section */}
                 <div className="row" style={{ padding: '120px', backgroundColor: '#f3f3f3', height: '50vh' }}>
                     <div className="col-md-6">
                         <img src="images/wellness-wheel.png" style={{ margin: 'auto', border: '0 solid black', display: 'block', height: '100%' }} />
