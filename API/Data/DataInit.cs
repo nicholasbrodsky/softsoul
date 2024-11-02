@@ -5,7 +5,7 @@ namespace API.Data
 {
     public static class DataInit
     {
-        public static async void Initialize(SoftSoulContext context)
+        public static async Task InitializeAsync(SoftSoulContext context)
         {
             if (!await context.SoftSoulPrograms.AnyAsync())
             {
@@ -61,7 +61,27 @@ namespace API.Data
                 await context.SaveChangesAsync();
             }
 
-            if (!context.Appointments.Any())
+            if (!await context.Clients.AnyAsync())
+            {
+                var clients = new List<Client>
+                {
+                    new Client
+                    {
+                        Id = Guid.NewGuid(),
+                        FirstName = "Nicholas",
+                        LastName = "Brodsky",
+                        DateOfBirth = new DateTime(1993, 6, 15),
+                        Email = "nicholasbrodsky@yahoo.com",
+                        Phone = 6619932896,
+                        Status = "active",
+                        SoftSoulProgramId = context.SoftSoulPrograms.First(x => x.Type == "Initial Assessment").Id
+                    },
+                };
+                await context.Clients.AddRangeAsync(clients);
+                await context.SaveChangesAsync();
+            }
+
+            if (!await context.Appointments.AnyAsync())
             {
                 var appointments = new List<Appointment>
                 {
@@ -69,30 +89,13 @@ namespace API.Data
                     {
                         Id = Guid.NewGuid(),
                         DateAndTime = DateTime.Now.AddDays(21),
-                        Status = "Booked"
+                        Status = "Booked",
+                        ClientId = context.Clients.First(x => x.Email == "nicholasbrodsky@yahoo.com").Id,
+                        SoftSoulProgramId = context.SoftSoulPrograms.First(x => x.Type == "Initial Assessment").Id
                     },
                 };
-                context.Appointments.AddRange(appointments);
-                context.SaveChanges();
-            }
-
-            if (!context.Clients.Any())
-            {
-                var clients = new List<Client>
-                {
-                    new Client
-                    {
-                        Id = Guid.NewGuid(),
-                        FirstName = "Jenny",
-                        LastName = "Brodsky",
-                        DateOfBirth = new DateTime(1993, 6, 15),
-                        Email = "hoslerjenny@gmail.com",
-                        Phone = 6616002200,
-                        Status = "active"
-                    },
-                };
-                context.Clients.AddRange(clients);
-                context.SaveChanges();
+                await context.Appointments.AddRangeAsync(appointments);
+                await context.SaveChangesAsync();
             }
         }
     }
